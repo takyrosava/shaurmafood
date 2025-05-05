@@ -222,7 +222,7 @@ footer ul.fotar li a:hover {
     background-color: yellow;
 }
 
-
+/* 🔽 Адаптивность для мобильных экранов (добавлено) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
