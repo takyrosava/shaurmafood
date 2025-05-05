@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: maroon;
+    font-family: sans-serif;
+}
+
+
+header {
+    display: flex;
+    background-color: #dd2c1a;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav a {
+    color: yellow;
+    font: small-caps bold 1.5rem/1 sans-serif;
+    transition: 0.5s;
+    text-decoration: none;
+    outline: none; 
+}
+
+header nav a:hover {
+    font-size: larger;
+    color: yellow;
+    text-decoration: none;
+    outline: none; 
+}
+
+
+header nav a:focus {
+    color: yellow;
+    outline: none; 
+}
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;  
+    height: 50px; 
+    border-radius: 25px; 
+    text-decoration: none;
+    font-size: 24px;  
+    color: white;  
+    background-color: #333; 
+    margin-left: 10px;  
+    transition: background-color 0.3s ease, opacity 0.3s ease; 
+    outline: none;
+}
+
+.social-icon:focus,
+.social-icon:hover {
+    outline: none !important; 
+}
+
+
+.social-icon.tiktok {
+    background-color: #000; 
+}
+
+.social-icon.instagram {
+    background-color: #E1306C; 
+}
+
+.social-icon.gis {
+    background-color: #00B341; 
+}
+
+
+@media (max-width: 768px) {
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+
+
+.cart-icon {
+    color: yellow;
+    font-size: 1.75rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.cart-icon:hover {
+    color: yellowgreen;
+    text-decoration: none; 
+}
+
+
+.splide__pagination {
+    display: none !important;
+}
+
+.splide__slide a {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    border-radius: 777px;
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+
+.thumbnails {
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+#main-carousel, #thumbnail-carousel{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+.intro {
+    height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+.intro .content {
+    padding-bottom: 150px;
+}
+
+.intro .content h1 {
+    margin: 15px 0;
+    font-size: 3.125rem; 
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.intro .content p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.intro .content a {
+    background-color: yellow;
+    border: none;
+    padding: 15px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: n;
+}
+.otecshayrmi {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.shaurmaassortiment {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shaurmaassortiment img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+footer {
+    background-color: #373535;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul.fotar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer ul.fotar li {
+    list-style: none;
+}
+
+footer ul.fotar li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul.fotar li a:hover {
+    color: black;
+}
+
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    z-index: 999;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.floating-contact:hover {
+    background-color: yellow;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .intro .content h1 {
+        font-size: 2.1875rem; 
+    }
+
+    .intro .content p {
+        font-size: 1.125rem; 
+    }
+
+    footer ul.fotar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul.fotar li a {
+        font-size: 0.875rem; 
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    #main-carousel, #thumbnail-carousel{
+        width: 100%;
+    }
+}

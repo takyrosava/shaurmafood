@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: maroon;
+    font-family: sans-serif;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    background-color: #dd2c1a;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: yellow;
+    font: small-caps bold 1.5rem/1 sans-serif;
+    transition: 0.5s;
+    text-decoration: none;
+    outline: none;
+}
+
+header nav a:hover {
+    font-size: larger;
+    color: yellow;
+    text-decoration: none;
+    outline: none;
+}
+
+
+header nav a:focus {
+    color: yellow;
+    outline: none;
+}
+
+
+.cart-icon {
+    color: yellow;
+    font-size: 1.75rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    background-color: #333;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    outline: none;
+}
+
+.social-icon:focus,
+.social-icon:hover {
+    outline: none !important;
+}
+
+.social-icon.tiktok {
+    background-color: #000;
+}
+
+.social-icon.instagram {
+    background-color: #E1306C;
+}
+
+.social-icon.gis {
+    background-color: #00B341;
+}
+
+
+@media (max-width: 768px) {
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+.cart-icon:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.container {
+    color: white;
+}
+
+.splide__pagination {
+    display: none !important;
+}
+
+.splide__slide a {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    border-radius: 777px;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #373535;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer ul.fotar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer ul.fotar li {
+    list-style: none;
+}
+
+footer ul.fotar li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul.fotar li a:hover {
+    color: black;
+}
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    z-index: 999;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.floating-contact:hover {
+    background-color: yellow;
+}
+
+
+.basketball {
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: black;
+    font-family: sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.basketball img {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+.basketball h5 {
+    width: 50px;
+    height: 50px;
+    font-family: sans-serif;
+
+}
+
+.basketball a {
+    margin-left: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: white;
+}
+
+.basketball a:hover {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .basketball {
+        width: 300px;
+        height: 300px;
+    }
+
+    footer ul.fotar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul.fotar li a {
+        font-size: 14px;
+    }
+}

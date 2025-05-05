@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: maroon;
+    font-family: sans-serif;
+}
+
+
+header {
+    display: flex;
+    background-color: #dd2c1a;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav a {
+    color: yellow;
+    font: small-caps bold 1.5rem/1 sans-serif;
+    transition: 0.5s;
+    text-decoration: none;
+    outline: none;
+}
+
+header nav a:hover {
+    font-size: larger;
+    color: yellow;
+    text-decoration: none;
+    outline: none;
+}
+
+
+header nav a:focus {
+    color: yellow;
+    outline: none;
+}
+
+
+.cart-icon {
+    color: yellow;
+    font-size: 1.75rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.cart-icon:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.shaurmaassortiment {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.shaurmaassortiment .dobav {
+    background-color: #dd2c1a;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shaurmaassortiment .dobav:hover {
+    background-color: #b32111;
+}
+
+.shaurmaassortiment .price {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+}
+
+.shaurmaassortiment:hover {
+    transform: scale(1.05);
+}
+
+.shaurmaassortiment img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shaurmaassortiment h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .shaurmaassortiment {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .shaurmaassortiment {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #373535;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul.fotar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer ul.fotar li {
+    list-style: none;
+}
+
+footer ul.fotar li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul.fotar li a:hover {
+    color: black;
+}
+
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    z-index: 999;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.floating-contact:hover {
+    background-color: yellow;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .intro .content h1 {
+        font-size: 2.1875rem;
+    }
+
+    .intro .content p {
+        font-size: 1.125rem;
+    }
+
+    footer ul.fotar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul.fotar li a {
+        font-size: 0.875rem;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+}
